@@ -30,9 +30,18 @@ uv run python main.py
 
 Press `Esc` inside the viewer to exit.
 
+For a light-weight run that uses the basic position-holding controller, execute:
+
+```bash
+uv run python view_entry.py
+```
+
+After installing `just`, you can simply call `just view`.
+
 ## Files
 
 - `main.py` launches the MuJoCo viewer and feeds commands from the controller.
+- `view_entry.py` opens the MuJoCo scene with the minimal position controller.
 - `quad_mujoco/controller.py` contains the cascaded position + attitude controller.
 - `quad_mujoco/physics.py` stores the physical description of the vehicle and helper math utilities.
 - `crazyfile/scene.xml` is the MuJoCo model of the quadrotor.
