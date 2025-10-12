@@ -1,7 +1,7 @@
 <mujoco model="CF2 scene">
   <include file="cf2.xml"/>
 
-  <option timestep="0.01"/>
+  <option timestep="0.001"/>
   <statistic center="0 0 0.1" extent="0.2" meansize=".05"/>
 
   <visual>

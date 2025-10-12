@@ -28,10 +28,10 @@ class SimpleQuadrotorController:
     def __init__(self, params: QuadrotorPhysicalParams = QUAD_PARAMS):
         self.params = params
         self.inertia = np.array(params.inertia)
-        self.kp_pos = np.array([1.5, 1.5, 6.0])
-        self.kd_pos = np.array([1.0, 1.0, 3.0])
-        self.kp_att = np.array([6.0, 6.0, 2.5])
-        self.kd_att = np.array([0.3, 0.3, 0.15])
+        self.kp_pos = np.array([2.0, 2.0, 6.0])
+        self.kd_pos = np.array([0.8, 0.8, 3.0])
+        self.kp_att = np.array([3.5, 3.5, 2.5])
+        self.kd_att = np.array([0.6, 0.6, 0.15])
         self.max_tilt = np.radians(20.0)
         self.max_accel_xy = self.params.gravity * np.tan(self.max_tilt)
 
